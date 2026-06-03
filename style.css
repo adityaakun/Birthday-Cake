@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -15,7 +16,9 @@ body {
   margin: -10em auto 0 auto;
 }
 
-/* ============================================== Candle */
+/* ============================================== Candle
+*/
+
 .velas {
   background: #ffffff;
   border-radius: 10px;
@@ -38,10 +41,18 @@ body {
   width: 100%;
   height: 2.22222222px;
 }
-.velas:after { top: 25%; left: 0; }
-.velas:before { top: 45%; left: 0; }
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+.velas:before {
+  top: 45%;
+  left: 0;
+}
 
-/* ============================================== Fire */
+/* ============================================== Fire
+*/
+
 .fuego {
   border-radius: 100%;
   position: absolute;
@@ -51,13 +62,25 @@ body {
   width: 6.66666667px;
   height: 18px;
 }
-.fuego:nth-child(1) { animation: fuego 2s 6.5s infinite; }
-.fuego:nth-child(2) { animation: fuego 1.5s 6.5s infinite; }
-.fuego:nth-child(3) { animation: fuego 1s 6.5s infinite; }
-.fuego:nth-child(4) { animation: fuego 0.5s 6.5s infinite; }
-.fuego:nth-child(5) { animation: fuego 0.2s 6.5s infinite; }
+.fuego:nth-child(1) {
+  animation: fuego 2s 6.5s infinite;
+}
+.fuego:nth-child(2) {
+  animation: fuego 1.5s 6.5s infinite;
+}
+.fuego:nth-child(3) {
+  animation: fuego 1s 6.5s infinite;
+}
+.fuego:nth-child(4) {
+  animation: fuego 0.5s 6.5s infinite;
+}
+.fuego:nth-child(5) {
+  animation: fuego 0.2s 6.5s infinite;
+}
 
-/* ============================================== Animation Fire */
+/* ============================================== Animation Fire
+*/
+
 @keyframes fuego {
   0%, 100% {
     background: rgba(254, 248, 97, 0.5);
@@ -72,36 +95,18 @@ body {
 }
 
 @keyframes in {
-  to { transform: translateY(0); }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .text {
   color: #8b6a60;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-style: italic;
+  font-style:italic;
   text-align: center;
-}
-.text h1 {
-  font-size: 1.4em;
-}
-
-/* ============================================== Next Button */
-.next-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ff4081;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.next-btn:hover {
-  background-color: #e73370;
-  transform: scale(1.05);
-}
+  h1 {
+    font-size: 1.4em;
+  }
+}  
